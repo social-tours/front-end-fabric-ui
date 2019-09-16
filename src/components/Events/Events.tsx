@@ -1,6 +1,16 @@
 import * as React from 'react';
 
-export class Events extends React.Component<{}, {}> {
+import { Stack } from 'office-ui-fabric-react';
+
+export interface IEventsProps {
+    user? : {}
+}
+
+export interface IEventsState {
+    events : []
+}
+
+export class Events extends React.Component< IEventsProps, IEventsState> {
     constructor(props:any){
         super(props)
         this.state = {
@@ -8,9 +18,15 @@ export class Events extends React.Component<{}, {}> {
         };
     }
 
+    public componentDidMount = () => {
+        
+    }
+
     public render = () => {
         return (
-            <h1>Events Page</h1>
+            <Stack >
+                {this.state.events ? this.state.events.map((event : any) => <div>{event.title}</div>) : <h2>Loading Events</h2>}
+            </Stack>>
         )
     }
 }
