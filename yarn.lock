@@ -1078,6 +1078,16 @@
   dependencies:
     "@types/yargs-parser" "*"
 
+"@uifabric/azure-themes@^7.0.7":
+  version "7.0.9"
+  resolved "https://registry.yarnpkg.com/@uifabric/azure-themes/-/azure-themes-7.0.9.tgz#5e8edd9a7f5a735962b3ad8f6bb8c8b2b0080154"
+  integrity sha512-pTZO8lyvCjPhc3WTDln5bSGqbvQpb+iL9NTwGlOgNSOKWNbPzxh6IvQdGVmFCUiwYl8psaQbCGdCH5+tsEofFQ==
+  dependencies:
+    "@uifabric/merge-styles" "^7.5.1"
+    "@uifabric/set-version" "^7.0.2"
+    office-ui-fabric-react "^7.31.3"
+    tslib "^1.7.1"
+
 "@uifabric/example-data@^7.0.1":
   version "7.0.1"
   resolved "https://registry.yarnpkg.com/@uifabric/example-data/-/example-data-7.0.1.tgz#8d5104ffbfa5c5b2589fa60f753932e536fd1003"
@@ -1085,7 +1095,16 @@
   dependencies:
     tslib "^1.7.1"
 
-"@uifabric/foundation@^7.4.1":
+"@uifabric/file-type-icons@^7.0.8":
+  version "7.1.0"
+  resolved "https://registry.yarnpkg.com/@uifabric/file-type-icons/-/file-type-icons-7.1.0.tgz#d2210749e03334452f01f993f80f0700e62a2c64"
+  integrity sha512-yb99xI9LEaFoMdtyZ09q/Gic8+v30gLcSYDV0V2dI2hdaBJk6Ql8u7ItMah9HYvd0Qti8wDkaVLjrHreL2gNSg==
+  dependencies:
+    "@uifabric/set-version" "^7.0.2"
+    "@uifabric/styling" "^7.6.2"
+    tslib "^1.7.1"
+
+"@uifabric/foundation@^7.3.1", "@uifabric/foundation@^7.4.1":
   version "7.4.1"
   resolved "https://registry.yarnpkg.com/@uifabric/foundation/-/foundation-7.4.1.tgz#fc94fa20ddc876ce77b4f74009bf8bde6cb83023"
   integrity sha512-JO31EbOhLtI1ugX5VcoW0HQTrdcDmR75nd3TG7dQqo1E7XjnQg1O/1jC8nFiPfC0L8rX4E3MrTib3f/ju0BSMA==
@@ -1112,6 +1131,22 @@
     "@uifabric/set-version" "^7.0.2"
     tslib "^1.7.1"
 
+"@uifabric/react-cards@^0.108.1":
+  version "0.108.1"
+  resolved "https://registry.yarnpkg.com/@uifabric/react-cards/-/react-cards-0.108.1.tgz#db308214bf7cc84c21b63e44b83aa942552bafcc"
+  integrity sha512-X2dVKK2Xq0WFuFHHgsRtiqWay1BOWtqJC3WIgak9iMnXnZ6oDuOLwUVzds4/06We0hzwQKmPanNyvshxB+jeXw==
+  dependencies:
+    "@microsoft/load-themed-styles" "^1.7.13"
+    "@uifabric/azure-themes" "^7.0.7"
+    "@uifabric/file-type-icons" "^7.0.8"
+    "@uifabric/foundation" "^7.3.1"
+    "@uifabric/set-version" "^7.0.2"
+    "@uifabric/styling" "^7.6.2"
+    "@uifabric/theme-samples" "^7.0.5"
+    "@uifabric/utilities" "^7.0.9"
+    office-ui-fabric-react "^7.29.2"
+    tslib "^1.7.1"
+
 "@uifabric/set-version@^7.0.2":
   version "7.0.2"
   resolved "https://registry.yarnpkg.com/@uifabric/set-version/-/set-version-7.0.2.tgz#9e2aede95e5cad58151e6ab0f94cc6efaef68c13"
@@ -1130,6 +1165,16 @@
     "@uifabric/utilities" "^7.0.9"
     tslib "^1.7.1"
 
+"@uifabric/theme-samples@^7.0.5":
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/@uifabric/theme-samples/-/theme-samples-7.0.5.tgz#878d25259d222e900d8d149847d23d1299b7e4b2"
+  integrity sha512-jAeZdy0+pn1ONpx9uy9vNe2c7tMAM4YDFqkqr5YzicpTNHDqv7yQGQwz1vA51Oxm4ohshqCn85YZ6dSk3ATI3g==
+  dependencies:
+    "@uifabric/set-version" "^7.0.2"
+    "@uifabric/variants" "^7.0.5"
+    office-ui-fabric-react "^7.29.2"
+    tslib "^1.7.1"
+
 "@uifabric/utilities@^7.0.9":
   version "7.0.9"
   resolved "https://registry.yarnpkg.com/@uifabric/utilities/-/utilities-7.0.9.tgz#10b0a30170e4eb3fe7e80c3fc7877d5cf0bd5c20"
@@ -1138,6 +1183,15 @@
     "@uifabric/merge-styles" "^7.5.1"
     "@uifabric/set-version" "^7.0.2"
     prop-types "^15.5.10"
+    tslib "^1.7.1"
+
+"@uifabric/variants@^7.0.5":
+  version "7.0.5"
+  resolved "https://registry.yarnpkg.com/@uifabric/variants/-/variants-7.0.5.tgz#67a5301a8c36bcb2e46c7d86929d58184e37cc2d"
+  integrity sha512-EqjNymAipTuwvsfS3dEU3+brVz0wyBUa2LQsc+L8gU/MNj4lCnrTi34pHRZrbw6L6Lus/YUg8lCGuXZ5hIHj5Q==
+  dependencies:
+    "@uifabric/set-version" "^7.0.2"
+    office-ui-fabric-react "^7.29.2"
     tslib "^1.7.1"
 
 "@webassemblyjs/ast@1.8.5":
@@ -6702,7 +6756,7 @@ obuf@^1.0.0, obuf@^1.1.2:
   resolved "https://registry.yarnpkg.com/obuf/-/obuf-1.1.2.tgz#09bea3343d41859ebd446292d11c9d4db619084e"
   integrity sha512-PX1wu0AmAdPqOL1mWhqmlOd8kOIZQwGZw6rh7uby9fTc5lhaOWFLX3I6R1hrF9k3zUY40e6igsLGkDXK92LJNg==
 
-office-ui-fabric-react@^7.0.0:
+office-ui-fabric-react@^7.0.0, office-ui-fabric-react@^7.29.2, office-ui-fabric-react@^7.31.3:
   version "7.33.0"
   resolved "https://registry.yarnpkg.com/office-ui-fabric-react/-/office-ui-fabric-react-7.33.0.tgz#99e3244f3b97b3546d8be1f0b3117ebf07ea8cc0"
   integrity sha512-HEZy98YRAbUEzB7w83gceFIhuacaAO3YSBT1I3gOAFDLYkBajx6fmhkfzzSHAWIfpg/IzXdYdI2wVRsabAZrGA==
