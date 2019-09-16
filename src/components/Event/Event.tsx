@@ -9,7 +9,7 @@ export interface IEventProps {
     title: string,
     capacity: string,
     timestamp: string,
-    location: string
+    schedule?: []
 }
 
 export class Event extends React.Component<IEventProps, {}> {
@@ -51,15 +51,10 @@ export class Event extends React.Component<IEventProps, {}> {
 
     return (
       <Stack tokens={sectionStackTokens}>
-        <Card compact tokens={cardTokens}>
-          <Card.Item>
-            <Text>{this.props.title}</Text>
-          </Card.Item>
-        </Card>
 
         <Card compact onClick={() => {}} tokens={cardTokens}>
           <Card.Item fill>
-            <Image src="https://placehold.it/180x135" alt="Placeholder image." />
+            <Image src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTBgxbj2pOE92Dv1vckegWdOeV0VZ53P3iHY_WUg19r75nNHAvI" alt="Placeholder image." />
           </Card.Item>
           <Card.Section>
             <Text variant="small" styles={siteTextStyles}>
@@ -67,7 +62,7 @@ export class Event extends React.Component<IEventProps, {}> {
             </Text>
             <Text styles={descriptionTextStyles}>{this.props.description}</Text>
             <Text variant="small" styles={helpfulTextStyles}>
-              {this.props.location}
+              
             </Text>
           </Card.Section>
           <Card.Section styles={footerCardSectionStyles} tokens={footerCardSectionTokens}>

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import axios from 'axios';
-
+import { Event } from '../Event';
+import { ShimmerBasic as Shimmer } from '../Shimmer';
 import { Stack } from 'office-ui-fabric-react';
 
 export interface IEventsProps {
@@ -32,7 +33,8 @@ export class Events extends React.Component< IEventsProps, IEventsState> {
     public render = () => {
         return (
             <Stack >
-                {this.state.events.length ? this.state.events.map((event : any) => <div>{event.title}</div>) : <h2>Loading Events</h2>}
+                <h2>Events</h2>
+                {this.state.events.length ? this.state.events.map((event : any) => <Event {...event}/>) : <Shimmer />}
             </Stack>
         )
     };
