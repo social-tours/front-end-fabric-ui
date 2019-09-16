@@ -3,7 +3,6 @@ import axios from 'axios';
 import { Event } from '../Event';
 import { ShimmerBasic as Shimmer } from '../Shimmer';
 import { Stack } from 'office-ui-fabric-react';
-import './Events.scss';
 
 export interface IEventsProps {
     user? : {}

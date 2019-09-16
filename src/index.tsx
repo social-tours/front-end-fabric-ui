@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import { App } from './App';
 import { mergeStyles } from 'office-ui-fabric-react';
+import { initializeIcons } from '@uifabric/icons';
 
 // Inject some global styles
 mergeStyles({
@@ -13,5 +14,7 @@ mergeStyles({
     }
   }
 });
+
+initializeIcons();
 
 ReactDOM.render(<App />, document.getElementById('app'));
