@@ -15,19 +15,20 @@
     "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
   "dependencies": {
+    "office-ui-fabric-react": "^7.0.0",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "office-ui-fabric-react": "^7.0.0"
+    "react-router": "^5.0.1"
   },
   "devDependencies": {
-    "just-stack-react": "^1.0.0",
-    "just-scripts": "^0.27.0",
     "babel-eslint": "^10.0.2",
     "eslint": "^5.16.0",
     "eslint-config-prettier": "^5.0.0",
     "eslint-plugin-import": "^2.17.3",
     "eslint-plugin-jsx-a11y": "^6.2.1",
     "eslint-plugin-react": "^7.13.0",
+    "just-scripts": "^0.27.0",
+    "just-stack-react": "^1.0.0",
     "prettier": "^1.18.2"
   }
 }
