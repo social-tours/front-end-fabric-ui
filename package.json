@@ -10,7 +10,9 @@
     "start": "just-scripts start",
     "test": "just-scripts test",
     "change": "npx beachball change",
-    "gen": "npx plop"
+    "gen": "npx plop",
+    "format": "prettier \"src/**/*.{js,html}\" --write",
+    "lint": "eslint \"src/**/*.{js,jsx}\" --quiet"
   },
   "dependencies": {
     "react": "^16.8.6",
@@ -19,6 +21,13 @@
   },
   "devDependencies": {
     "just-stack-react": "^1.0.0",
-    "just-scripts": "^0.27.0"
+    "just-scripts": "^0.27.0",
+    "babel-eslint": "^10.0.2",
+    "eslint": "^5.16.0",
+    "eslint-config-prettier": "^5.0.0",
+    "eslint-plugin-import": "^2.17.3",
+    "eslint-plugin-jsx-a11y": "^6.2.1",
+    "eslint-plugin-react": "^7.13.0",
+    "prettier": "^1.18.2"
   }
 }
